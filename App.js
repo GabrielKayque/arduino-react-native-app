@@ -1,30 +1,12 @@
 import { StatusBar } from 'expo-status-bar'
-import { Button, Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
+import HomeScreen from './screens/HomeScreen'
+import InfoScreen from './screens/InfoScreen'
+
 export default function App() {
   const Stack = createNativeStackNavigator()
-
-  const HomeScreen = ({ navigation }) => {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Tela de Pareamento</Text>
-        <Button
-          title="Go to InfoScreen"
-          onPress={() => navigation.navigate('Info')}
-        />
-      </View>
-    )
-  }
-
-  const InfoScreen = () => {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Tela de Informações</Text>
-      </View>
-    )
-  }
 
   return (
     <NavigationContainer>
