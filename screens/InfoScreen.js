@@ -11,4 +11,4 @@ const InfoScreen = () => {
 
 export default InfoScreen
 
-const styles = StyleSheet.create({})
+// const styles = StyleSheet.create({})
